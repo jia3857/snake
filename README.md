@@ -15,6 +15,10 @@ This repository contains:
 
 I timed most functions to be sure to improve speed and used numba jit for compiling some functions, the genetic algorithm is parallelized for its main part (snakes evaluation) using multiprocessing and joblib
 
+## Setup
+
+```bash
+
 
 ## Installation
 
@@ -27,7 +31,10 @@ Libraries you'll need to run the project:
 Clone the repo using
 
 ```sh
-git clone https://github.com/valentinmace/snake.git
+git clone https://github.com/valentinmace/snake.git ${REPO} ; cd $REPO
+virtualenv --python=python3 .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Usage
